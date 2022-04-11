@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial C</title>
+</head>
+<body>
+    <h1>Estruturas de Repetição</h1>
+    <section>
+    <h2>Por quê?</h2>
+    <p>
+        Estruturas de repetição são utilizadas para repetir
+        instruções até que uma <b>condição se torne falsa/verdadeira</b>
+    </p>
+    </section>
+    <section>
+        <h2>while</h2>
+        <p>
+            Segue o padrão <b>while(condicao){}</b>
+            Executa as instruções enquanto a condição for verdadeira
+            se na primeira vez for falsa ele não executa as instruções
+        </p>
+        <h3>Motivos para usar</h3>
+        <ul>
+            <li>Quando sua condição não tem um momento definido para se tornar falsa</li>
+        </ul>
+        <h3>Desvantagens</h3>
+        <ul>
+            <li>Caso você precise incrementar o valor da varíavel é comum esquecer e isso causa um loop infinito</li>
+        </ul>
+    </section>
+    <section>
+        <h2>for</h2>
+        <p>
+            Segue o padrão <b>for(int i = 0; i < 10; i++){instruções}</b>
+            for(inicialização variavel; condição; incrementação)
+        </p>
+        <h3>Motivos para usar</h3>
+        <ul>                
+            <li>A condição depende do valor de uma variável que é atualizada 1 vez em cada loop</li>
+            <li>Ajuda a evitar de formar loops infinitos</li>
+        </ul>
+        <h3>Desvantagens</h3>
+        <ul>
+            <li>Te obriga a incrementar o valor da variável, o que pode ser ruim caso você não precise disso</li>
+        </ul>
+    </section>
+    <section>
+        <h2>do while</h2>
+        <p>
+            Segue o padrão <b>do{instruções}while(condicao);</b>
+        </p>
+        <h3>Motivos para usar</h3>
+        <ul>
+            <li>Quando as suas instruções devem ser executadas ao menos 1 vez</li>
+        </ul>
+        <h3>Desvantagens</h3>
+        <ul>
+            <li>Seu loop sempre executa, o que pode ser indesejado</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Exemplos</h2>
+        <ul>
+            <li>
+                <p><b>While</b></p>
+                int i = 0;<br>
+                while (i < 5){<br>
+                    printf("aaa");<br>
+                    i++;<br>
+                }
+            </li>
+            <li>
+                <p><b>For</b></p>
+                for(int i = 0; i < 10; i++){<br>
+                    printf("oi")<br>
+                }
+            </li>
+            <li>
+                <p><b>Do While</b></p>
+                do{<br>
+                    printf("alo")<br>
+                }while(1 == 2);
+            </li>
+        </ul>
+    </section>
+</body>
+</html> 
