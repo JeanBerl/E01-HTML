@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo">
+                </p>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                </p>
+                <p>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha">
+                </p>
+                <p>
+                    <span>Sexo:</span>
+                    <input type="radio" id="masculino" name="sexo" value="masculino"><label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino"><label for="feminino">Feminino</label>
+                </p>
+                <p>
+                    <label for="idade">Idade:</label>
+                    <input type="number">
+                </p>
+                <p>
+                    <label for="tipoCartao">Choose a car:</label>
+                    <select id="tipoCartao" name="tipoCartao" size="3">
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Visa">Visa</option>
+                        <option value="AmericanExpress">American Express</option>
+                    </select> 
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <p>
+                    <label for="cargo">Cargo:</label>
+                    <select name="cars" id="cars">
+                        <option value="AnalistaJunior">Analista Júnior</option>
+                        <option value="AnalistaPleno">Analista Pleno</option>
+                        <option value="AnalistaSenior">Analista Sênior</option>
+                    </select> 
+                </p>
+                <p>
+                    <p>Dados Pessoais:</p>
+                    <div>
+                        <input type="checkbox" id="fumante" name="fumante">
+                        <label for="fumante">Fumante</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="praticaExercicioFisico" name="praticaExercicioFisico">
+                        <label for="praticaExercicioFisico">Pratica Exercícios Físicos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="consomeAlcool" name="consomeAlcool">
+                        <label for="consomeAlcool">Consome bebida alcóolica</label>
+                    </div>
+                    <p>
+                        <label for="experienciasProfissionais">Experiências Profissionais</label><br>
+                        <textarea id="experienciasProfissionais" name="experienciasProfissionais">
+
+                        </textarea>
+                    </p>
+                </p>
+            </fieldset>
+            <input type="reset">
+            <button type="submit">Inserir</button>
+        </form>
+    </body>
+</html>
